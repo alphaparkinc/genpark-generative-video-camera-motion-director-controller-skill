@@ -1,0 +1,41 @@
+{
+  "name": "genpark-generative-video-camera-motion-director-controller-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Generative cinematography video director controlling 3D camera trajectories, temporal physics motion vectors, and 4K ProRes rendering.",
+  "author": "genpark",
+  "category": "generative-video",
+  "tags": [
+    "generative-video",
+    "cinematography-control",
+    "camera-motion",
+    "gen3-architecture",
+    "runway-ml"
+  ],
+  "inputs": {
+    "scene_description": {
+      "type": "string"
+    },
+    "camera_trajectory": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "video_shot_id": {
+      "type": "string"
+    },
+    "temporal_consistency_score_pct": {
+      "type": "number"
+    },
+    "physics_motion_vector_fidelity": {
+      "type": "number"
+    },
+    "rendered_prores_4444_video_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
